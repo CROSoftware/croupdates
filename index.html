@@ -1,50 +1,254 @@
-<html><body>
-  <style>
-    section#CROupdates { font-family: sans-serif; color: #fff; background-color: #272730; }
-    section#CROupdates a { color: #F8A340; text-decoration: none; transition: 1s; }
-    section#CROupdates a:hover { text-decoration: underline; }
-    section#CROupdates header { font-weight: bold; padding: 8px 4px; background: #000; vertical-align: middle; }
-    section#CROupdates header strong { position: relative; top: -8px; }
-    section#CROupdates h2 { margin: 0; background: #33333d; font-size: 1.25em; font-weight: bold; padding: 12px 8px; }
-    section#CROupdates h2 .date { float: right; position: relative; }
-    section#CROupdates p { padding: 8px 18px; margin: 0; }
-    section#CROupdates #supportNumber { float: right; position: relative; top: 8px; right: 8px; }
-    section#CROupdates #supportNumber a { color: #f8a340; }
-    section#CROupdates article .readmore { display: block; height: 40px; padding: 0 12px; }
-    section#CROupdates article .readmore a { white-space: nowrap; color: #33333d; background: #F8A340; display: block; width: 20%; border-radius: 15px; text-decoration: none; float: right; margin: 4px; padding: 4px; text-align: center; font-weight: bold; }
-  </style>
-  <section id="CROupdates">
-    <header>
-      <div id="supportNumber">Support: <a href="tel:1-844-276-2467">1-844-276-2467</a></div>
-      <img src="https://crojames.github.io/croupdates/cro-icon-96x96.png" width="32" height="32"><strong>CRO Updates</strong>
-    </header>
-    <article>
-      <h2><span class="date">05/01/2024</span>Design update to CRO.</h2>
-        <p>We have pushed out a small update that refines some design elements of CRO. Things should look a lot cleaner, now!</p>
-        <p>There is a chance that some of our providers will need to do an Empty Cache and Hard Reload in order for the changes to take full effect. If you notice anything amiss in the design of the software, you will most likely need to perform this quick procedure.</p>
-        <p>To do the Empty Cache and Hard Reload, simply right click anywhere within CRO and then click "Inspect" on the menu that pops up. After that, RIGHT click on the refresh button of your browser and choose "Empty Cache and Hard Reload". After you click that you can then close the window that opened on the right side of your screen.</p>
-        <p>This will FULLY refresh CRO and make sure that all updates are fully implemented. Your CRO should be better than ever now!</p>
-        <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
-    </article>
-    <article>
-      <h2><span class="date">02/23/2024</span>Customer Portal overhaul.</h2>
-        <p>Our Customer Portal has been utilized by our providers for many years, now, and in the pursuit of making it as versatile, user-friendly and efficient as possible we've updated it again!</p>
-        <p>Instead of having a separate portal for your assets as you do with your payments and invoices it is now unified into one, single portal requiring a single login. We've made some major improvements on the asset management side of things and we're just getting started!</p>
-        <p>If you are interested in starting to use the Customer Portal and see all our newest updates, please reach out to our Support team at any time. We'll make it happen!</p>
-        <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
-    </article>
-    <article>
-      <h2><span class="date">10/10/2023</span>iPhone/iPad Driver's App Update</h2>
-        <p>We are very pleased to announce that our fine developers have successfully pushed out a new update to the Apple App Store.</p>
-        <p>This update specifically focuses on two things, with a few bug fixes in the background:</p>
-        <ol>
-          <li>GPS Tracking: GPS Tracking is now fully functional on the iOS app.</li>
-          <li>Image uploads and bar code scanning: These functions now work just as they do on the Android app.</li>
-        </ol>
-        <p>Your drivers, who use the iOS version of the app, will need to go to the App Store and update the CRO for Driver's app. The update will only take a moment and as soon as it's finished you'll have access to these features. The app, itself, will look much as it did before but with new functionality in the background.</p>
-        <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
-    </article>
-    <!--article>
+<html>
+
+<body>
+    <style>
+        section#CROupdates {
+            font-family: sans-serif;
+            color: #fff;
+            background-color: #272730;
+        }
+
+        section#CROupdates a {
+            color: #F8A340;
+            text-decoration: none;
+            transition: 1s;
+        }
+
+        section#CROupdates a:hover {
+            text-decoration: underline;
+        }
+
+        section#CROupdates header {
+            font-weight: bold;
+            padding: 8px 4px;
+            background: #000;
+            vertical-align: middle;
+        }
+
+        section#CROupdates header strong {
+            position: relative;
+            top: -8px;
+        }
+
+        section#CROupdates h2 {
+            margin: 0;
+            background: #33333d;
+            font-size: 1.25em;
+            font-weight: bold;
+            padding: 12px 8px;
+        }
+
+        section#CROupdates h2 .date {
+            float: right;
+            position: relative;
+        }
+
+        section#CROupdates p {
+            padding: 8px 18px;
+            margin: 0;
+        }
+
+        section#CROupdates #supportNumber {
+            float: right;
+            position: relative;
+            top: 8px;
+            right: 8px;
+        }
+
+        section#CROupdates #supportNumber a {
+            color: #f8a340;
+        }
+
+        section#CROupdates article .readmore {
+            display: block;
+            height: 40px;
+            padding: 0 12px;
+        }
+
+        section#CROupdates article .readmore a {
+            white-space: nowrap;
+            color: #33333d;
+            background: #F8A340;
+            display: block;
+            width: 20%;
+            border-radius: 15px;
+            text-decoration: none;
+            float: right;
+            margin: 4px;
+            padding: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        li img {
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        #markdown-update h3, video {
+            padding: 8px 18px;
+        }
+    </style>
+    <section id="CROupdates">
+        <header>
+            <div id="supportNumber">Support: <a href="tel:1-844-276-2467">1-844-276-2467</a></div>
+            <img src="https://crojames.github.io/croupdates/cro-icon-96x96.png" width="32" height="32">
+            <strong>CRO Updates</strong>
+        </header>
+        <article id="markdown-update">
+            <h2 id="-dispatch-updates-"><span class="date">08/10/2024</span><strong>Route Finder Enhancement</strong></h2>
+            <p><strong>What&#39;s Changed</strong></p>
+            <p>You can now use the Route Finder on new dropoff or delivery jobs to find the perfect route for your new
+                asset.</p>
+            <p>Here&#39;s a quick overview of how to add a stop to a route using a drop-off request</p>
+            <ul>
+                <li>Create a new drop-off request and select the Recur options
+                    <img src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route-finder_1-recurs.png"
+                        alt="drawing" style="width:635px;" />
+                </li>
+                <li>Select Route Options and Click the new &quot;Use Route Finder&quot; button.
+                    <img src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route-finder_2-newbutton.png"
+                        alt="drawing" style="width:635px;" />
+                </li>
+                <li>Search for Routes with Stops Nearby, select a Nearby Stop and Choose Add to Route
+                    <img src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route-finder_3-find-route.png"
+                        alt="drawing" style="width:635px;" />
+                </li>
+                <li>Complete the Dropoff Request and open the Route Stop Report
+                    <br />
+                    <br />
+                </li>
+                <li>Open the Unoptimized Stops Section and Click the Route Name to open the Route
+                    <img src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route-finder_4-unoptimized.png"
+                        alt="drawing" style="width:635px;" />
+                </li>
+                <li>Optimize the Route with New Stop Added
+                    <img src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route-finder_5-optimize-route.png"
+                        alt="drawing" style="width:450px;" />
+                </li>
+            </ul>
+            <p><strong>For an in-depth walk-through, check out this video</strong></p>
+            <video controls width=733 preload="meta">
+                <source src="https://cdn.crob.in/changelists/8-9-2024/Route-finder/route_finder_update.mp4#t=2">
+            </video>
+
+            <p><strong>Why did we make this change?</strong></p>
+            <p>Many providers expressed the need to tell their customers what route an asset will be placed on when
+                taking a drop-off request order.
+                <br>
+                <br>
+                <br>
+            </p>
+        </article>
+        <article>
+            <h2 id="-billing-updates-"><span class="date">08/10/2024</span><strong>Unbilled Jobs Tab</strong></h2>
+            <p><strong>What&#39;s Changed</strong></p>
+            <p>Certain conditions can make jobs unbillable, and an invoice cannot be generated. We have added an
+                enhancement that shows the reasons for jobs being unbillable and a new &quot;Unbilled&quot; tab on the
+                &quot;Invoices Page&quot; where you can collect these jobs and work toward making them billable, if
+                necessary.
+                <br />
+                <br />
+            </p>
+            <ul>
+                <li>New Unbilled Tab<br> <img
+                        src="https://cdn.crob.in/changelists/8-9-2024/Unbilled-tab/unbilled-image-1.png" alt="drawing"
+                        style="width:635px;" /></li>
+                <li>Jobs that cannot generate an invoice will allow you to move to the Unbilled tab or leave them where
+                    they are.<br> <img src="https://cdn.crob.in/changelists/8-9-2024/Unbilled-tab/unbilled-image-2.png"
+                        alt="drawing" style="width:400px;" /></li>
+                <li>Merging invoices will show unbillable jobs<br> <img
+                        src="https://cdn.crob.in/changelists/8-9-2024/Unbilled-tab/unbilled-image-3.png" alt="drawing"
+                        style="width:530px;" /></li>
+                <li>Unbillable jobs can be moved to the new Unbilled tab<br> <img
+                        src="https://cdn.crob.in/changelists/8-9-2024/Unbilled-tab/unbilled-image-4.png" alt="drawing"
+                        style="width:530px;" /></li>
+            </ul>
+            <p><strong>For more information, check out this video</strong></p>
+            <video controls width=733 preload="meta">
+                <source src="https://cdn.crob.in/changelists/8-9-2024/Unbilled-tab/unbilled_tab.mp4#t=2">
+            </video>
+
+            <p><strong>Why did we make this change?</strong></p>
+            <p>You&#39;ll now have more visibility into which jobs are excluded from invoicing and why, ensuring easier
+                ways to fix discrepancies and keep track of your billing.</p>
+            <p><br /></p>
+        </article>
+        <article>
+            <h2 id="-bug-fixes-"><span class="date">08/10/2024</span><strong>Bug Fixes</strong></h2>
+            <p><strong>What&#39;s Changed</strong></p>
+            <ul>
+                <li>Fixed &quot;Calendar&quot; and &quot;Customer&quot; printouts that were getting cut off after one
+                    page of results.</li>
+                <li>Restored green checkmark for weights icon on &quot;Calendar Page&quot; when weights have been added
+                    to a job.</li>
+                <li>Fixed ability to save in &quot;Edit Fuel Log&quot; popup on &quot;Fuel Logs&quot; page.</li>
+                <li>Fixed search box on &quot;Route Page&quot;.</li>
+                <li>Fixed Partial Cluster Split. Completing a pickup job for a partial cluster would not split the
+                    cluster correctly.</li>
+                <li>Fixed &quot;Master Report&quot; asset quantities editing for completed jobs. This is now disabled.
+                </li>
+                <li>Fixed &quot;Request Map&quot; page truck selection info popup for a job.</li>
+                <li>Fixed website logo overlap on login buttons.</li>
+                <li>Fixed &quot;Asset Page&quot; features with assets containing the &quot;+&quot; characters in the
+                    number.</li>
+                <li>Fixed &quot;Asset Details&quot; popup on the assets page to allow asset to show.</li>
+                <li>Corrected phone number link in the email customer received for accepting the disclaimer.</li>
+                <li>Fixed issue causing some billing accounts to not show up in the customer list.</li>
+                <li>Improved reporting accuracy of asset cluster counts on the &quot;Master Report&quot;.</li>
+                <li>Fixed error when sending an invoice to multiple emails from billing.</li>
+                <li>Fixed issue that prevented drivers from completing some dump jobs.</li>
+                <li>Fixed side nav menu links under &quot;Reporting User&quot; and &quot;Billing User&quot; that were
+                    not displaying properly.</li>
+                <li>Fixed recurring jobs not carrying over customer service hours to the new job once completed.</li>
+                <li>Fixed broken logo images in emails.</li>
+                <li>Updated dispatch logout sessions length.</li>
+                <li>Fixed background color theme in Driver App</li>
+            </ul>
+        </article>
+        <article>
+            <h2><span class="date">05/01/2024</span>Design update to CRO.</h2>
+            <p>We have pushed out a small update that refines some design elements of CRO. Things should look a lot
+                cleaner, now!</p>
+            <p>There is a chance that some of our providers will need to do an Empty Cache and Hard Reload in order for
+                the changes to take full effect. If you notice anything amiss in the design of the software, you will
+                most likely need to perform this quick procedure.</p>
+            <p>To do the Empty Cache and Hard Reload, simply right click anywhere within CRO and then click "Inspect" on
+                the menu that pops up. After that, RIGHT click on the refresh button of your browser and choose "Empty
+                Cache and Hard Reload". After you click that you can then close the window that opened on the right side
+                of your screen.</p>
+            <p>This will FULLY refresh CRO and make sure that all updates are fully implemented. Your CRO should be
+                better than ever now!</p>
+            <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
+        </article>
+        <article>
+            <h2><span class="date">02/23/2024</span>Customer Portal overhaul.</h2>
+            <p>Our Customer Portal has been utilized by our providers for many years, now, and in the pursuit of making
+                it as versatile, user-friendly and efficient as possible we've updated it again!</p>
+            <p>Instead of having a separate portal for your assets as you do with your payments and invoices it is now
+                unified into one, single portal requiring a single login. We've made some major improvements on the
+                asset management side of things and we're just getting started!</p>
+            <p>If you are interested in starting to use the Customer Portal and see all our newest updates, please reach
+                out to our Support team at any time. We'll make it happen!</p>
+            <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
+        </article>
+        <article>
+            <h2><span class="date">10/10/2023</span>iPhone/iPad Driver's App Update</h2>
+            <p>We are very pleased to announce that our fine developers have successfully pushed out a new update to the
+                Apple App Store.</p>
+            <p>This update specifically focuses on two things, with a few bug fixes in the background:</p>
+            <ol>
+                <li>GPS Tracking: GPS Tracking is now fully functional on the iOS app.</li>
+                <li>Image uploads and bar code scanning: These functions now work just as they do on the Android app.
+                </li>
+            </ol>
+            <p>Your drivers, who use the iOS version of the app, will need to go to the App Store and update the CRO for
+                Driver's app. The update will only take a moment and as soon as it's finished you'll have access to
+                these features. The app, itself, will look much as it did before but with new functionality in the
+                background.</p>
+            <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
+        </article>
+        <!--article>
       <h2><span class="date">10/3/2023</span>CRO Legacy Drivers app update</h2>
         <p>Our Driver's app has updated!</p>
         <p>With this update there are a few bug fixes and small updates in the background, but we also have two new announcements to make:</p>
@@ -55,7 +259,7 @@
         <p>We've found that the app is not auto-updating with these newer features, so your drivers will need to go to their Google Play store, search for "CRO Legacy Driver" and tap on the "Update" button. It only takes a minute and after the update the new features will be live for your drivers!</p>
         <p>Please reach out to Support at 1-844-276-2467 with any questions or concerns.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">6/13/2022</span>NEWEST UPDATE</h2>
         <p>CRO Software is being updated with some often requested features and fixes, including but not limited to:</p>
         <ul>
@@ -71,7 +275,7 @@
         </ul>
         <p<strong>NOTE:</strong> You may need to do a quick Empty Cache and Hard Reload if you notice any issues after the update. If it's bene a while since you've done one of those, you can view our short video on doing the <a href="https://www.youtube.com/watch?v=xZUCGpnSMmU" target="_blank">Empty Cache and Hard Reload</a>.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">05/25/2023</span>New maintenance update and light bug fixes.</h2>
 
       <p>We will be releasing a maintenance update to the system soon to the dispatch and drivers app systems. The below changes will be taking effect along with a few minimal bug fixes that have been reported.</p>
@@ -89,7 +293,7 @@
       </ul>
         <p>Please contact CRO Support with any questions at <strong>1-844-276-2467</strong>.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">02/02/2023</span>Presenting our new FOG report!</h2>
         <p>We have just released our new FOG (Fats, Oils and Grease) tracking and FOG report for those of our providers that service grease traps. If your company does not service grease traps then this new feature will not apply to you.</p>
         <p>However, if you do service grease traps you can use the following steps to start using our new FOG features:</p>
@@ -101,7 +305,7 @@
         </ol>
         <p>Please contact CRO Support with any questions involving our new FOG report update at <strong>1-844-276-2467</strong>.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">11/14/2022</span>Customer Portal updates.</h2>
         <p>For those of our providers that have already been using it, it's not news that CRO offers a <strong>Customer Portal</strong>. For all of our providers we've updated our Customer Portal to allow your customers to request a services, swap or pickup of their deployed assets. Your customers can now also pay any outstanding invoices that have been posted in CRO Billing with Card Connect integration!</p>
         <p>New Customer Portal requests also will now show up at the top right, next to the bell icon, from any page of CRO so you don't miss the requests. The first phase of our Customer Portal update will include a sign up process for your customers (for added security) and upcoming phases will offer additional features, so keep an eye on this space for future updates!</p>
@@ -110,11 +314,11 @@
         <p>Please contact CRO Support with any questions involving our new Customer Portal update at <strong>1-844-276-2467</strong>.</p>
 
     </article-->
-    <!--article>
+        <!--article>
       <h2>Card Connect Integration</h2>
         <p>We are happy to introduce phase one of our integration with Card Connect for payment processing! Please <a href="https://cardconnect.com/signup/cro" target="_blank">click here</a> to get started with Card Connect or call CRO Support with any questions.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">5/02/2022</span>Fuel Surcharges</h2>
         <p>By popular demand, we have a new training video showcasing how to add Fuel Surcharges to your invoices!</p>
         <div class="readmore"><a href="https://www.youtube.com/watch?v=LhzG-tMDgQo" target="_blank">Fuel Surcharges &raquo; &nbsp;</a></div>
@@ -132,21 +336,21 @@
         </ol>
         <p>As always, if you have any questions please reach out to us at <strong>1-844-276-2467</strong>.</p>
     </article-->
-    <!--article>
+        <!--article>
       <h2><span class="date">3/12/2020</span>Change of procedures in regard to COVID-19</h2>
         <p>We have officially released some temporary procedure adjustments, due to the COVID-19 pandemic. Please click the "Read More" link, below, for all the information.</p>
         <p>As always, if you have any questions please reach out to us at <strong>1-844-276-2467</strong>.</p>
       <div class="readmore"><a href="https://crosoftware.zendesk.com/hc/en-us/articles/360040913931" target="_blank">Read More &raquo;</a></div>
     </article-->
-    <!-- article>
+        <!-- article>
       <h2><span class="date">2/26/2020</span>Attention: Quickbooks Desktop users!</h2>
         <p>We recently updated our code for the QuickBooks Web Connector that now allows you to set the "Default Delivery Method" (Email or Print) on a customer in CRO, and when you send an invoice over to your QuickBooks it will now transfer that setting over.</p>
         <p>NOTE: This will not retroactively set your customers to either Email or Print, but any that you set from now on will reflect that both in CRO and QuickBooks. If you do not change this setting, then it will still behave in QuickBooks as it has previously.</p>
         <p>Please don't hesitate to reach out to our Support Staff if you have any questions at <strong>1-844-276-2467</strong>.</p>
       <p align="center"><iframe width="400" height="225" src="https://www.youtube.com/embed/1QDne224QeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube_thumbnail"></iframe></p-->
-      <!--div class="readmore"><a href="https://crosoftware.zendesk.com/hc/en-us/articles/360036813031" target="_blank">Read More &raquo;</a></div -->
-    <!--/article -->
-    <!--article>
+        <!--div class="readmore"><a href="https://crosoftware.zendesk.com/hc/en-us/articles/360036813031" target="_blank">Read More &raquo;</a></div -->
+        <!--/article -->
+        <!--article>
       <h2><span class="date">12/19/2019</span>Announcing PRORATION!</h2>
         <p>This announcement is an exciting one! There's a feature that's been on the tips of the tongues of so many of our providers, and we are very proud to reveal what we've been working on: <strong>Proration</strong>!</p>
         <p>Previously, if you wanted to prorate a customer's invoice, you would need to manually adjust it for each invoice with a proration. Well, not anymore! Now it's state-of-the-art and built right into CRO Billing.</p>
@@ -162,7 +366,9 @@
       <p>NOTE: This update may require an <a href="https://crosoftware.zendesk.com/hc/en-us/articles/115001399392-Empty-Cache-and-Hard-Reload" target="_blank">Empty Cache and Hard Reload to take full effect.</a></p>
       <p>Thank you for choosing CRO Software!</p>
       <p align="center"><iframe width="400" height="225" src="https://www.youtube.com/embed/1QDne224QeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube_thumbnail"></iframe></p-->
-      <!--div class="readmore"><a href="https://crosoftware.zendesk.com/hc/en-us/articles/360034413252" target="_blank">Read More &raquo;</a></div>
+        <!--div class="readmore"><a href="https://crosoftware.zendesk.com/hc/en-us/articles/360034413252" target="_blank">Read More &raquo;</a></div>
     </article-->
-  </section>
-</body></html>
+    </section>
+</body>
+
+</html>
